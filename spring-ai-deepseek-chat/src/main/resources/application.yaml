@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: spring-ai-deepseek-chat
+  ai:
+    chat:
+      client:
+        enabled: false
+    openai:
+      api-key: ${DEEP_SEEK_API_KEY}
+      base-url: https://api.deepseek.com
+springdoc:
+  api-docs:
+    enabled: true
+
+server:
+  port: 8081
+
