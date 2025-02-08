@@ -9,6 +9,7 @@
         <module>spring-ai-deepseek-chat</module>
         <module>spring-ai-ollama-chat</module>
         <module>spring-ai-openai-chat</module>
+        <module>spring-ai-ollama-translator</module>
     </modules>
 
     <properties>
