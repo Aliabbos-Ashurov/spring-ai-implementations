@@ -1,0 +1,18 @@
+spring:
+  ai:
+    openai:
+      chat:
+        enabled: true
+      api-key: ${GEMINI_API_KEY}
+      base-url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash
+    vertex:
+      ai:
+        gemini:
+          project-id: 608446467493
+          location: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash
+          credentials-uri: classpath*:service-account.json   # your credentials !!
+  application:
+    name: spring-ai-gemini-chat
+springdoc:
+  api-docs:
+    enabled: true

@@ -1,0 +1,22 @@
+services:
+  ollama:
+    container_name: ollama-ai-container
+    image: ollama/ollama:0.5.8-rc10
+    volumes:
+      - ollama:/root/.ollama
+    ports:
+      - "11434:11434"
+    restart: unless-stopped
+    command: [ "ollama", "run", "llama3" ]
+#    deploy:
+#      resources:
+#        reservations:
+#          devices:
+#            - driver: nvidia
+#              count: all
+#              capabilities: [ gpu ]  # Uncomment for NVIDIA GPU
+#            # - driver: "runc"      # Uncomment for AMD GPU
+#            #   device_ids: ["/dev/kfd", "/dev/dri"]
+
+volumes:
+  ollama:
