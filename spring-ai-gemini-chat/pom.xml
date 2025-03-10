@@ -9,6 +9,18 @@
     </parent>
     <artifactId>spring-ai-gemini-chat</artifactId>
 
+
+    <developers>
+        <developer>
+            <id>abbos</id>
+            <name>Aliabbos Ashurov</name>
+            <roles>
+                <role>Java Software Engineer</role>
+            </roles>
+            <timezone>+5</timezone>
+        </developer>
+    </developers>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
